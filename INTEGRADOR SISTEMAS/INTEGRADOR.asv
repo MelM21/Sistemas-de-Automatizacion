@@ -1,9 +1,9 @@
-k=2; %para la ganancia
+k=3; %para la ganancia
 [tm_num,tm_den]=pade(2,1);
 %Tfg_zeros=[]; 
 %Tfg_polos=[-1/2 -1/5];
 G_num=[2];
-G_den=[3 5 1 0];
+G_den=[4 0.8 1];
 
 %Tfh_zeros=[];
 %Tfh_polos=[-2];
@@ -17,5 +17,5 @@ H=tf(H_num,H_den);
 
 HLC=G/(1+H*G);
 
-%HLC.den
-%HLC.num
+HLC.den
+HLC.num
